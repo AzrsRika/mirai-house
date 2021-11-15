@@ -696,11 +696,34 @@ textarea {
 
 /* タブレット */
 @media(max-width: 1024px) {
+    /* Service */
+    .service .text-content {
+        padding: 20px 20px 40px;
+    }
     /* About */
-
+    .about img {
+       width: 50%;
+    }
     /* Works */
 
-    /* 共通 */
+    /* レイアウト */
+    .container {
+        max-width: 100%;
+        width: 90%;
+    }
+    .about .container {
+        width: 90%;
+    }
+    .works .container{
+        max-width: 100%;
+    }
+    .flex-container {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .left-text {
+        margin-right: 20px;
+    }
     .company .en,
     .news-page .en,
     .contact .en,
@@ -708,8 +731,15 @@ textarea {
     .brochures .en {
         display: block;
     }
-
-    /* contact.html */
+    /* housing.html---------------------------------- */
+    .housing-section_item {
+        width: 30%;
+    }
+    .circle-img {
+        width: 200px;
+        height: 200px;
+    }
+    /* contact.html---------------------------------- */
     th,td {
         display: block;
     }
@@ -722,7 +752,7 @@ textarea {
         border-top: 1px solid #ddd;
     }
 
-    /* completion.html(送信完了画面) */
+    /* 送信完了画面---------------------------------- */
     .message-text {
         width: 90%;
     }    
@@ -739,7 +769,6 @@ textarea {
     }
     /* 共通 */
     .container {
-        width: 600px;
         max-width: 100%;
         padding-top: 40px;
         padding-bottom: 40px;        
@@ -793,7 +822,7 @@ textarea {
         width: 0; /*通常時メニュー非表示*/
         position: absolute;
         z-index: 2;
-        top: 90px; /* ヘッダーと同じ高さ */
+        top: 85px;
         right: 0;
         overflow: hidden;
         transition: .5s;
@@ -887,6 +916,9 @@ textarea {
     .right-text {
         margin-left: 0;
     }
+    .about img {
+        width: 100%;
+    }
 
     /* Works */
     .flex-container {
@@ -938,6 +970,7 @@ textarea {
         margin-left: 0;
         margin-top: 10px;
     }
+
     /* reform.html------------------------------- */
     .reform .right-img {
         margin-bottom: 0;
@@ -952,11 +985,14 @@ textarea {
 
     /* housing.html------------------------------- */
     .housing-section_item {
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
     .circle-img {
-        margin: 10px 0;
+        width: 300px;
+        height: 300px;
+        margin: 10px auto;
     }
     .housing-section_item +  .housing-section_item {
         margin-top: 20px;
@@ -975,6 +1011,7 @@ textarea {
     .select-box {
         width: 60%;
         margin: 0 auto 15px;
+        font-size: 1.6rem;
     }
     .news-list2_wrapper {
         display: block;
