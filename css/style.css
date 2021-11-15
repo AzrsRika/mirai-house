@@ -54,16 +54,12 @@ nav {
 img {
     max-width: 100%;
 }
-main h1,h2 {    
-    font-weight: 700;
-    font-size: 5rem;
-}
 .center {
     text-align: center;
 }
 .item-ttl {
     font-size: 2.6rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
 }
 .en {
@@ -76,17 +72,12 @@ main h1,h2 {
 .jp {
     display: block;
     font-size: 1.6rem;
-    font-weight: normal;
 }
 .small-en {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 2.8rem;
     line-height: 1;
-}
-h3 {
-    font-size: 2.8rem;
-    font-weight: 700;
 }
 .text,.text-item {
     font-size: 1.6rem;
@@ -159,7 +150,7 @@ h3 {
 /* ボタン(真ん中に表示) */
 .news-btn,.works-btn,
 .contact-btn,.qa-btn {
-    margin: 25px auto 0;
+    margin: 0 auto 0;
 }
 
 /* index.html ---------------------------------- */
@@ -185,6 +176,9 @@ h3 {
     position: absolute;
     display: flex;
     align-items: center;
+    font-weight: 700;
+    font-size: 5rem;
+    color: #fff;
     text-shadow: 1px 1px 2px rgba(221, 221, 221, 0.397);
     top: 50%;
     left: 8%;
@@ -192,7 +186,6 @@ h3 {
     -webkit-transform: translateY(-50%);
     padding-left: 20px;
     height: 130px;
-    color: #fff;
     /* 横棒 */
     border-left: 6px solid #f99900;
 }
@@ -230,7 +223,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     /* tableと同じ余白 */
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .news-link {
     display: inline-block;
@@ -303,8 +296,6 @@ h3 {
     justify-content: center;
     text-align: center;
     font-size: 2rem;
-    /* TopWorks&施工事例ページと同じ余白 */
-    margin-top: 75px
 }
 .pagination li,.pagination a,.current {
     width: 36px;
@@ -395,6 +386,9 @@ h3 {
 
 /* About */
 /* About,reform.html共通 */
+.about-sp {
+    display: none;
+}
 .about .container {
     width: 1200px;
 }
@@ -463,6 +457,7 @@ h3 {
 }
 .qa img {
     width: 120px;
+    margin-bottom: 20px;
 }
 .qa-item {
     display: flex;
@@ -628,14 +623,15 @@ h3 {
     font-size: 2.2rem;
 }
 
-
 /* refourm.html ---------------------------------- */
 .reform .right-img {
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 /* housing.html ---------------------------------- */
-/* 丸く切り抜いた画像のセクション */
+.housing h3 {
+    margin-bottom: 0;
+}
 .housing-section_item {
     display: flex;
     flex-direction: column;
@@ -658,8 +654,8 @@ h3 {
 table {
     width: 100%;
     font-size: 1.6rem;
-        /* Top Newsと同じ余白 */
-        margin-bottom: 50px;
+    /* Top Newsと同じ余白 */
+    margin-bottom: 50px;
 }
 th,td {
     padding: 20px;
@@ -765,7 +761,7 @@ textarea {
 
     /* Works */
 
-    /* 下層ページ共通 */
+    /* 共通 */
     .company .en,
     .news-page .en,
     .contact .en,
@@ -773,6 +769,9 @@ textarea {
     .brochures .en {
         display: block;
     }
+    /* .news-btn, .works-btn, .contact-btn, .qa-btn {
+        margin-top: 0;
+    } */
 
     /* contact.html */
     th,td {
@@ -834,8 +833,13 @@ textarea {
     .en {
         font-size: 3.2rem;
     }
+    .small-en {
+        /* Reform,Works枠内の見出し */
+        font-size: 2.2rem;
+    }
     .item-ttl {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        margin-bottom: 10px;
     }
     .next-page_ttl {
         margin-top: 40px;
@@ -943,6 +947,12 @@ textarea {
     }
 
     /* About */
+    .about-sp {
+        display: block;
+    }
+    .about-pc {
+        display: none;
+    }
     .about > .container {
         width: 90%;
     }
@@ -951,6 +961,9 @@ textarea {
     }
     .top-page .left-text {
         margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .left-text {
         margin-right: 0;
     }
     .right-text {
@@ -977,7 +990,7 @@ textarea {
         width: 50%;
     }
     .jp-big {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
     .qa-item {
         width: auto;
@@ -1007,8 +1020,31 @@ textarea {
         margin-left: 0;
         margin-top: 10px;
     }
-    
-    /* company.html */
+    /* reform.html------------------------------- */
+    .reform .right-img {
+        margin-bottom: 0;
+    }
+    .right-img + .right-img {
+        margin-top: 20px;
+    }
+    .right-img img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* housing.html------------------------------- */
+    .housing-section_item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .circle-img {
+        margin: 10px 0;
+    }
+    .housing-section_item +  .housing-section_item {
+        margin-top: 20px;
+    }
+
+    /* company.html------------------------------- */
     .policy-img {
         display: block;
     }
@@ -1017,7 +1053,7 @@ textarea {
         width: 100%;
     }
     
-    /* news.html */
+    /* news.html----------------------------------- */
     .select-box {
         width: 60%;
         margin: 0 auto 15px;
@@ -1034,7 +1070,7 @@ textarea {
         margin-bottom: 0;
     }
 
-    /* contact.html */
+    /* フォーム------------------------------------- */
     .brochures .container,
     .contact .container {
         width: 90%;
@@ -1052,7 +1088,7 @@ textarea {
         margin-bottom: 10px;
     }
     
-    /* completion.html(送信完了画面) */
+    /* 送信完了画面------------------------------------- */
     .message-text {
         width: 100%;
     }     
