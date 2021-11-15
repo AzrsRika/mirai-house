@@ -561,67 +561,6 @@ img {
     margin-top: 100px;
     margin-bottom: 0;
 }
-/* company.html(会社案内) --------------------------------------------*/
-/* 共通（見出し） */
-.company .item-ttl {
-    font-size: 3rem;
-}
-/* 代表挨拶 */
-.item-greeting {
-    display: flex;
-    justify-content: space-between;
-}
-.item-greeting img {
-    width: 50%;
-}
-.item-greeting .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
-}
-.right1,.right2 {
-    display: block;
-    text-align: right;
-}
-/* 企業理念 */
-.philosophy-area {
-    max-width: none;
-    background-image: url(../img/bg.jpg);
-}
-/* 経営方針 */
-.policy-area {
-    max-width: none;
-}
-.policy-list {
-    margin-bottom: 30px;
-}
-.policy-img {
-    display: flex;
-    justify-content: space-between;
-}
-.policy-img img {
-    width: 48%;
-}
-.policy-list li {
-    position: relative;
-    padding: 15px 0 15px 40px;
-}
-.policy-list li::before {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    content: "";
-    color: #f99900;
-    border: 1px solid #f99900;
-    width: 10px;
-    height: 10px;
-}
-.philosophy-area .text {
-    font-size: 2.2rem;
-}
 
 /* refourm.html ---------------------------------- */
 .reform .right-img {
@@ -756,7 +695,7 @@ textarea {
 }
 
 /* タブレット */
-@media(max-width: 1200px) {
+@media(max-width: 1024px) {
     /* About */
 
     /* Works */
@@ -769,9 +708,6 @@ textarea {
     .brochures .en {
         display: block;
     }
-    /* .news-btn, .works-btn, .contact-btn, .qa-btn {
-        margin-top: 0;
-    } */
 
     /* contact.html */
     th,td {
@@ -786,24 +722,6 @@ textarea {
         border-top: 1px solid #ddd;
     }
 
-    /* copany.html */
-    .company .container {
-        width: 80%;
-    }
-    /* 代表挨拶 */
-    .item-greeting {
-        display: block;
-    }
-    .item-greeting img {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .item-greeting .text {
-        width: 100%;
-    }
-    .text-contents {
-        margin-bottom: 20px;
-    }
     /* completion.html(送信完了画面) */
     .message-text {
         width: 90%;
