@@ -248,9 +248,10 @@ img {
     top: 50%;
     transform: translateY(-50%);
 }
-.news-list li:hover .item_ttl {
-    opacity: .7;
-}
+/* ホバー */
+/* .news-link:hover {
+    background: rgba(217, 58, 14, 0.02);
+} */
 .item_date {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -275,9 +276,6 @@ img {
 .news-list2 a {
     display: block;
 }
-.news-list2 a:hover {
-    opacity: .8;
-}
 .news-list2_wrapper {
     display: flex;
     justify-content: space-between;
@@ -289,6 +287,12 @@ img {
 .item_text {
     font-size: 1.4rem;
     margin: 10px 0;
+}
+/* ホバー */
+.news-link:hover,
+.news-list2 a:hover,
+.artical-btn:hover {
+    opacity: .7;
 }
 /* ページ送り */
 .pagination {
@@ -446,6 +450,9 @@ img {
 .service_item-ttl .en,
 .service_item-ttl .jp {
     text-align: start;
+}
+.works-link:hover {
+    filter: brightness(120%);
 }
 
 /* お問い合わせ・資料請求リンク */
