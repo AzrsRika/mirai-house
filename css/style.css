@@ -248,10 +248,6 @@ img {
     top: 50%;
     transform: translateY(-50%);
 }
-/* ホバー */
-/* .news-link:hover {
-    background: rgba(217, 58, 14, 0.02);
-} */
 .item_date {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -352,6 +348,7 @@ img {
     max-width: 100%;
     margin: 30px 0;
 }
+
 /* works_detail.html------------------------------------------- */
 .works-item img {
     display: block;
@@ -388,7 +385,6 @@ img {
     padding: 40px 40px 80px;
 }
 
-/* About */
 /* About,reform.html共通 */
 .about-sp {
     display: none;
